@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Outdoor Adventures</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=PT+Sans:wght@400;700&display=swap"
+      rel="stylesheet" />
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <section id="photo-wrapper">
+        <img src="./assets/images/logo.png" alt="Odin Project Logo" class="logo"></img>
+      <div class="attribution">
+        Photo by
+        <a href="http://unsplash.com/@JonasJaekenMedia">Jonas Jaeken</a> on
+        <a href="http://unsplash.com">Unsplash</a>
+      </div>
+    </section>
+    <section id="form-wrapper">
+      <h1 id="headline">
+        Sign up for this completely real travel product and get away! Our
+        breathtaking tours of the great outdoors will satisfy your need for
+        adventure and bring your spirit healing.
+      </h1>
+      <h2 id="subtitle"><span>No one</span> deserves it more than you.</h2>
+      <form action="/" method="POST" id="form">
+        <p class="form-title">I need a vacation!</p>
+        <div id="inputs">
+          <div class="input-wrapper">
+            <label for="first">First</label>
+            <input
+              type="text"
+              name="first"
+              id="first"
+              placeholder="* First"
+              title="Name should contain only characters A-Z. Consider using Roman numerals for name suffixes (III)."
+              pattern="[a-zA-Z- ]+"
+              required />
+          </div>
+          <div class="input-wrapper">
+            <label for="last">Last</label>
+            <input
+              type="text"
+              name="last"
+              id="last"
+              placeholder="* Last"
+              title="Please enter your name."
+              pattern="[a-zA-Z- ]+"
+              required />
+          </div>
+          <div class="input-wrapper">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="* email@email.com"
+              title="Please enter a valid email address."
+              required />
+          </div>
+          <div class="input-wrapper">
+            <label for="phone">Phone Number</label>
+            <input
+              type="number"
+              name="phone"
+              id="phone"
+              placeholder="* 8005882300"
+              pattern="[0-9]{10}"
+              min="0"
+              max="9999999999"
+              title="Phone number must be 10 digits. Do not use ( ), - or add +1 before the area code."
+              required />
+          </div>
+          <div class="input-wrapper">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="* ••••••••"
+              title="Your password needs to be between 8 and 30 characters long and contain one uppercase letter, one symbol, and a number."
+              minlength="8"
+              maxlength="30"
+              required />
+          </div>
+          <div class="input-wrapper">
+            <label for="confirm">Confirm Password</label>
+            <input
+              type="password"
+              name="confirm"
+              id="confirm-password"
+              placeholder="* ••••••••"
+              title="Passwords must match."
+              minlength="8"
+              required />
+          </div>
+          <button type="submit" class="submit">Book Now</button>
+        </div>
+      </form>
+
+      <p class="existing">
+        Have an existing account? <a href="/">Sign In</a> instead.
+      </p>
+    </section>
+  </body>
+</html>
